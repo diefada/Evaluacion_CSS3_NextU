@@ -1,0 +1,301 @@
+body{
+  font-family: "Dancing Script";
+  background-color: #02010a;
+}
+/*Animacion Header*/
+
+@keyframes
+slide {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+}
+
+/*Codigo para Movil*/
+@media screen and (max-width: 899px){
+
+  body{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+.cabecera{
+    width: 100%;
+    height:auto;
+    background-color:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+    overflow:hidden;
+    text-align: center;
+    animation: slide 1.5s;
+  }
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px 2px  #02010a;
+    line-height:60px;
+    margin:10px;
+}
+
+header nav ul{
+    margin:10px;
+    line-height:60px;
+}
+
+header a{
+  color: white;
+  font-size: 1.5em;
+}
+
+.pagac{
+  text-decoration: none;
+}
+
+nav li{
+  display: inline-block;
+}
+
+.imcentral{
+  background-color: #82c3a6;
+}
+
+.imcentral img{
+  width: 80%;
+  margin: 1em 10%;
+  border: 1px solid black;
+  box-shadow: 0 0 2px #02010a;
+}
+
+.imsecundaria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: column;
+  border: 1px;
+}
+
+.paisajes,.retratos{
+  width: 80%;
+  margin: 1em 10%;
+  text-align: center;
+}
+
+.paisajes{
+  transform: scale(0.95) translateY(-5px);
+}
+
+.imsecundaria img{
+  width: 90%;
+  margin: 1em 5%;
+  transition: all 1s;
+  border: 1px solid black;
+  box-shadow: 0 0 2px #02010a;
+}
+.paisajes img:hover{
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+}
+
+.retratos img:hover{
+  transform: translate(20px,-5px);
+  border: 2px solid black;
+  box-shadow: 2px 2px 30px #82c3a6;
+}
+
+.link{
+font-size: 1.5em;
+color: black;
+}
+
+.Galeria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: column;
+}
+
+.Galeria article{
+  width: 90%;
+}
+
+.Galeria img{
+  width: 90%;
+  margin: 1em 10%;
+}
+
+.pic:nth-child(1) img{
+  filter: blur(10px);
+}
+
+.pic:nth-child(2n+2) img
+{filter: grayscale(100%);
+}
+
+.pic:nth-child(3) img
+{filter: sepia(90%);
+}
+
+footer{
+  width: 100%;
+  height:auto;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0px 0px 10px 10px;
+  overflow:hidden;
+}
+
+footer li{
+  list-style: none;
+}
+
+.Redes{
+  width: 20px;
+  margin-right: 5px;
+}
+}
+
+/*Codigo para Desktop*/
+@media screen and (min-width: 900px){
+
+  body{
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+.cabecera{
+    width: 100%;
+    height:auto;
+    background-color:#5b7989;
+    border-radius: 10px 10px 0px 0px;
+    overflow:hidden;
+    animation: slide 1.5s;
+  }
+
+header h1{
+    color: white;
+    text-shadow: 2px 2px 2px  #02010a;
+    line-height:60px;
+    margin:10px;
+    float:left;
+}
+
+header nav ul{
+    float:right;
+    margin:10px;
+    line-height:60px;
+}
+
+header a{
+  color: white;
+  font-size: 1.5em;
+}
+
+.pagac{
+  text-decoration: none;
+}
+
+nav li{
+  display: inline-block;
+}
+
+.imcentral{
+  background-color: #82c3a6;
+}
+
+.imcentral img{
+  width: 80%;
+  margin: 1em 10%;
+  border: 1px solid black;
+  box-shadow: 0 0 2px #02010a;
+}
+
+.imsecundaria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+  border: 1px;
+}
+
+.paisajes,.retratos{
+  width: 50%;
+  text-align: center;
+}
+
+.paisajes{
+  transform: scale(0.95) translateY(-5px);
+}
+
+.imsecundaria img{
+  width: 90%;
+  margin: 1em 5%;
+  transition: all 1s;
+  border: 1px solid black;
+  box-shadow: 0 0 2px #02010a;
+}
+.paisajes img:hover{
+  transform: rotate(10deg);
+  border: 2px solid #82c3a6;
+}
+
+.retratos img:hover{
+  transform: translate(20px,-5px);
+  border: 2px solid black;
+  box-shadow: 2px 2px 30px #82c3a6;
+}
+
+.link{
+font-size: 1.5em;
+color: black;
+}
+
+.Galeria{
+  background-color: #d5c75f;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Galeria article{
+  width: 33.3%;
+}
+
+.Galeria img{
+  width: 90%;
+  margin: 1em 5%;
+}
+
+.pic:nth-child(1) img{
+  filter: blur(10px);
+}
+
+.pic:nth-child(2n+2) img
+{filter: grayscale(100%);
+}
+
+.pic:nth-child(3) img
+{filter: sepia(90%);
+}
+
+
+footer{
+  width: 100%;
+  height:auto;
+  background-color: #C6d5c5;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px 0px 10px 10px;
+  overflow:hidden;
+}
+
+footer li{
+  list-style: none;
+}
+
+.Redes{
+  width: 20px;
+  margin-right: 5px;
+}
+}
